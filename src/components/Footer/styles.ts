@@ -7,7 +7,7 @@ export const Footer = styled.footer`
         color: ${props => props.theme.colors.white};
         font-weight: 300;
         font-size: 1rem;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
 
         a {
             color: ${props => props.theme.colors.whiteDark};
