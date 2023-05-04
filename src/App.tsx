@@ -1,9 +1,13 @@
-import Home from './pages/home'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import { Outlet } from 'react-router-dom'
 
 export default function App() {
   return (
     <>
-      <Home />
+      <Header />
+      <Outlet />
+      <Footer/>
     </>
   )
 }
