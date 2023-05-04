@@ -10,6 +10,7 @@ import Home from '../src/pages/home'
 import Junior from '../src/pages/junior'
 import Pleno from '../src/pages/pleno'
 import Senior from '../src/pages/senior'
+import ErrorPage from '../src/pages/error'
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: '/',
