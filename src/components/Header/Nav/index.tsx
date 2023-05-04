@@ -7,7 +7,7 @@ export default function index() {
   return (
     <styles.Nav>
         <styles.List>
-            <styles.itemList><a href="#" title='' className='active'>Home</a></styles.itemList>
+            <styles.itemList><a href="/" title='' className='active'>Home</a></styles.itemList>
             <styles.itemList><span>:</span></styles.itemList>
             <styles.itemList><a href="#" title='júnior developer'>Júnior</a></styles.itemList>
             <styles.itemList><a href="#" title='pleno developer'>Pleno</a></styles.itemList>

@@ -25,14 +25,68 @@ export const itemList = styled.li`
 
         &.icon-git {
             font-size: 1.2rem;
+
+            @media (max-width: 375px){
+                display: none;
+            }
+
+            @media (max-width: 393px) {
+                display: none;
+            }
+             @media (max-width: 414px) {
+                display: none;
+            }
         }
 
         &.icon-insta {
             font-size: 1.5rem;
+            @media (max-width: 375px){
+                display: none;
+            }
+            @media (max-width: 393px) {
+                display: none;
+            }
+             @media (max-width: 414px) {
+                display: none;
+            }
         }
 
         &.icon-link {
             font-size: 1.6rem;
+            @media (max-width: 375px){
+                display: none;
+            }
+            @media (max-width: 393px) {
+                display: none;
+            }
+             @media (max-width: 414px) {
+                display: none;
+            }
+        }
+
+        @media (max-width: 504px){
+        &.active {
+            display: none;
+        }
+        }
+
+        @media (max-width: 375px){
+            font-size: 1.3rem;
+        }
+
+        @media (max-width: 414px) {
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (max-width: 616px){
+
+    }
+
+    @media (max-width: 504px){
+        span {
+            display: none;
         }
     }
 `;
+

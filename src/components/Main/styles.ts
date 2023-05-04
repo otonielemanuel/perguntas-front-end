@@ -2,6 +2,19 @@ import styled from "styled-components";
 
 export const Main = styled.main`
   padding: 4.5% 20%;
+
+  @media (max-width: 616px){
+    padding: 4.5% 10%;
+  }
+  @media (max-width: 375px) {
+    padding: 3% 5%;
+  }
+  @media (max-width: 390px){
+    padding: 2% 4%;
+  }
+  @media (max-width: 393px){
+    padding: 2% 7%;
+  }
 `;
 
 export const titleDiv = styled.div`
@@ -11,6 +24,10 @@ export const titleDiv = styled.div`
 export const Title = styled.h1`
   font-size: 2rem;
   font-weight: 700;
+
+  @media (max-width: 396px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const Texts = styled.div`

@@ -1,10 +1,9 @@
 import * as styles from './styles'
-import { HiOutlineHeart } from 'react-icons/HI'
 
 export default function index() {
   return (
     <styles.Footer>
-      <p>Developed <HiOutlineHeart /> by Otoniel Emanuel</p>
+      <p>Developed by <a href="https://github.com/otonielemanuel">Otoniel Emanuel</a></p>
     </styles.Footer>
   )
 }

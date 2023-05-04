@@ -5,7 +5,9 @@ import Logo from '../../assets/logo.svg'
 export default function index() {
   return (
     <styles.Header>
-        <styles.Image src={Logo} alt="Logotipo 120 perguntas" />
+        <a href="">
+          <styles.Image src={Logo} alt="Logotipo 120 perguntas" />
+        </a>
         <Nav />
     </styles.Header>
   )
