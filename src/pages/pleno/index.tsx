@@ -1,8 +1,9 @@
+import Main from "../../components/mainPleno"
 
 export default function index() {
   return (
     <>
-    <h1>Pleno</h1>
+      <Main />
     </>
   )
 }
