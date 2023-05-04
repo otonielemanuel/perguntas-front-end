@@ -9,6 +9,7 @@ export const titleDiv = styled.div`
 `;
 
 export const Title = styled.h1`
+  font-size: 2rem;
   font-weight: 700;
 `;
 
@@ -17,7 +18,7 @@ export const Texts = styled.div`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 1.08rem;
+  font-size: 1.05rem;
   color: ${props => props.theme.colors.whiteDark};
   font-weight: 400;
   margin-top: 25px;
