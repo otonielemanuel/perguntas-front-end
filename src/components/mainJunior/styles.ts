@@ -17,3 +17,14 @@ export const Main = styled.main`
     padding: 2% 7%;
   }
 `;
+
+export const ContainerCenter = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const Contruindo = styled.img`
+  height: 300px;
+  margin: 5%;
+`;
