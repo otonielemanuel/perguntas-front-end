@@ -50,7 +50,7 @@ export const Title = styled.h1`
 `;
 
 export const Texts = styled.div`
-  margin-top: 7j%;
+  margin-top: 7%;
 `;
 
 export const Paragraph = styled.p`
