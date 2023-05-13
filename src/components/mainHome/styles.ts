@@ -3,16 +3,16 @@ import styled from "styled-components";
 export const Main = styled.main`
   padding: 4.5% 20%;
 
-  @media (max-width: 616px){
+  @media (max-width: 616px) {
     padding: 4.5% 10%;
   }
   @media (max-width: 375px) {
     padding: 3% 5%;
   }
-  @media (max-width: 390px){
+  @media (max-width: 390px) {
     padding: 2% 4%;
   }
-  @media (max-width: 393px){
+  @media (max-width: 393px) {
     padding: 2% 7%;
   }
 `;
@@ -25,18 +25,35 @@ export const Title = styled.h1`
   font-size: 2rem;
   font-weight: 700;
 
-  @media (max-width: 396px) {
-    font-size: 1.5rem;
+  span {
+    display: none;
+    position: absolute;
+    margin-left: -2.5%;
+    transition: 0.9s;
+    font-weight: 500;
+    opacity: 0.4;
+  }
+
+  &:hover {
+    span {
+      display: block;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    &:hover {
+      span {
+        display: none !important;
+      }
+    }
   }
 `;
 
-export const Texts = styled.div`
-    
-`;
+export const Texts = styled.div``;
 
 export const Paragraph = styled.p`
   font-size: 1.05rem;
-  color: ${props => props.theme.colors.whiteDark};
+  color: ${(props) => props.theme.colors.whiteDark};
   font-weight: 400;
   margin-top: 25px;
   letter-spacing: 0.8px;
@@ -44,8 +61,8 @@ export const Paragraph = styled.p`
 
   a {
     text-decoration: none;
-    color: ${props => props.theme.colors.whiteDark};
-}
+    color: ${(props) => props.theme.colors.whiteDark};
+  }
 
   &.italic {
     font-style: italic;

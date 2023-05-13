@@ -4,7 +4,7 @@ export default function index() {
   return (
     <styles.Main>
       <styles.titleDiv>
-        <styles.Title>120 perguntas front-end</styles.Title>
+        <styles.Title><span>#</span> 120 perguntas front-end</styles.Title>
       </styles.titleDiv>
       <styles.Texts>
         <styles.Paragraph>Olá, nerd! Bem-vindo ao nosso FAQ de front-end, onde são respondidas 120 perguntas relacionadas ao front-end.</styles.Paragraph>
