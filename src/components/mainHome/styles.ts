@@ -24,26 +24,26 @@ export const titleDiv = styled.div`
 export const Title = styled.h1`
   font-size: 2rem;
   font-weight: 700;
+  // position: relative;
 
   span {
-    display: none;
     position: absolute;
     margin-left: -2.5%;
-    transition: 0.9s;
+    transition: opacity 0.9s;
     font-weight: 500;
-    opacity: 0.4;
+    opacity: 0;
   }
 
   &:hover {
     span {
-      display: block;
+      opacity: 0.4;
     }
   }
 
   @media (max-width: 1100px) {
     &:hover {
       span {
-        display: none !important;
+        opacity: 0 !important;
       }
     }
   }
