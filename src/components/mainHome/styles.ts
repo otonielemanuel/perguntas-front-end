@@ -49,7 +49,9 @@ export const Title = styled.h1`
   }
 `;
 
-export const Texts = styled.div``;
+export const Texts = styled.div`
+  margin-top: 7j%;
+`;
 
 export const Paragraph = styled.p`
   font-size: 1.05rem;
