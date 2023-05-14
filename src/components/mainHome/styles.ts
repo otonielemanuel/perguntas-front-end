@@ -24,11 +24,13 @@ export const titleDiv = styled.div`
 export const Title = styled.h1`
   font-size: 2rem;
   font-weight: 700;
+  cursor: pointer;
   // position: relative;
 
   span {
     position: absolute;
     margin-left: -2.5%;
+    color: ${(props) => props.theme.colors.whiteDark};
     transition: opacity 0.9s;
     font-weight: 500;
     opacity: 0;
