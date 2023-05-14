@@ -22,7 +22,17 @@ export const ContainerCenter = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 7%;
 `;
+
+export const Question = styled.p`
+  color: ${(props) => props.theme.colors.whiteDark};
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  cursor: pointer;
+`;
+
 
 export const Contruindo = styled.img`
   height: 300px;
