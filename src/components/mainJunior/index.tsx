@@ -1,5 +1,5 @@
 import * as styles from "./styles";
-import inConstructio from "../../assets/inconstruction.svg";
+import { useState } from "react";
 
 type FAQItem = {
   id: number;
@@ -8,20 +8,42 @@ type FAQItem = {
 };
 
 export default function index() {
+  const [respostaAberta, setRespostaAberta] = useState<number | null>(null);
+  const [pesquisa, setPesquisa] = useState<string>("");
+
+  const toggleResposta = (id: number) => {
+    if (respostaAberta === id) {
+      setRespostaAberta(null);
+    } else {
+      setRespostaAberta(id);
+    }
+  };
+
+  const handlePesquisaChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setPesquisa(event.target.value);
+    setRespostaAberta(null); // Limpar a resposta aberta ao fazer uma nova pesquisa
+  };
+
+  const perguntasFiltradas = juniordata.filter((item) =>
+    item.pergunta.toLowerCase().includes(pesquisa.toLowerCase())
+  );
+
   return (
     <styles.Main>
       <h1>Junior</h1>
-      <p>
-        Olá, Júnior. Neste espaço voce encontrará 30 das 120 perguntas front-end, poderá
-        pesquisar por alguns temas <input placeholder="aqui" type="text" />.
-        Espero que aprende muita coisa e se divirta!
-      </p>
       <styles.ContainerCenter>
         <ol>
-          {juniordata.map((item) => (
+          <styles.Headline>
+            Olá, Júnior. Neste espaço você encontrará 30 das 120 perguntas front-end, poderá
+            pesquisar por alguns temas clicando <input placeholder="aqui" type="text" value={pesquisa} onChange={handlePesquisaChange} />.
+            Espero que aprenda muita coisa e se divirta!
+          </styles.Headline>
+          {perguntasFiltradas.map((item) => (
             <div key={item.id}>
-              <styles.Question>{item.pergunta}</styles.Question>
-            <p>{item.resposta}</p>
+              <styles.Question onClick={() => toggleResposta(item.id)}>
+                {item.pergunta}
+              </styles.Question>
+              {respostaAberta === item.id && <styles.Answer>{item.resposta}</styles.Answer>}
             </div>
           ))}
         </ol>

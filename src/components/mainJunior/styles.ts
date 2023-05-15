@@ -25,14 +25,45 @@ export const ContainerCenter = styled.div`
   margin-top: 7%;
 `;
 
+
+export const Headline = styled.p`
+  margin-bottom: 25px;
+  font-size: 1.05rem;
+  color: ${(props) => props.theme.colors.whiteDark};
+  font-weight: 400;
+  letter-spacing: 0.8px;
+  line-height: 1.6rem;
+
+  input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: ${(props) => props.theme.colors.whiteDark};
+    font-size: 1.05rem;
+    font-weight: 400;
+    border-bottom: 1px solid ${(props) => props.theme.colors.whiteDark};
+    padding: 3px 10px;
+  }
+`;
+
 export const Question = styled.p`
   color: ${(props) => props.theme.colors.whiteDark};
   font-size: 1.2rem;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   cursor: pointer;
 `;
 
+export const Answer = styled.p`
+  font-size: 1.05rem;
+  font-weight: 400;
+  margin-top: 25px;
+  letter-spacing: 0.8px;
+  line-height: 1.6rem;
+  margin-bottom: 30px;
+  transition: .9s;
+  margin-left: 12px;
+`;
 
 export const Contruindo = styled.img`
   height: 300px;
