@@ -39,10 +39,11 @@ export const Headline = styled.p`
     outline: none;
     background-color: transparent;
     color: ${(props) => props.theme.colors.whiteDark};
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 400;
     border-bottom: 1px solid ${(props) => props.theme.colors.whiteDark};
     padding: 3px 10px;
+    width: 120px;
   }
 `;
 
@@ -62,7 +63,6 @@ export const Answer = styled.p`
   line-height: 1.6rem;
   margin-bottom: 30px;
   transition: .9s;
-  margin-left: 12px;
 `;
 
 export const Contruindo = styled.img`
