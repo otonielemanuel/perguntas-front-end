@@ -164,7 +164,7 @@ const juniordata: FAQItem[] = [
     id: 18,
     pergunta: "Quais os beneficios do TypeScript?",
     resposta:
-      "O TypeScript é uma linguagem de programação que traz diversos benefícios em relação ao JavaScript, tais como:",
+      "O TypeScript é uma linguagem de programação que traz diversos benefícios em relação ao JavaScript, tais como: Tipagem estática, Melhor ferramenta de desenvolvimento, Documentação automática, Possibilidade de utilizar recursos mais modernos da linguagem JavaScript.",
   },
   {
     id: 19,
