@@ -22,7 +22,7 @@ export const ContainerCenter = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 7%;
+  margin-top: 5%;
 `;
 
 
@@ -61,7 +61,7 @@ export const Answer = styled.p`
   margin-top: 25px;
   letter-spacing: 0.8px;
   line-height: 1.6rem;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   transition: .9s;
 `;
 

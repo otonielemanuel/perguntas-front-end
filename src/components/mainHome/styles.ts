@@ -52,7 +52,7 @@ export const Title = styled.h1`
 `;
 
 export const Texts = styled.div`
-  margin-top: 7%;
+  margin-top: 5%;
 `;
 
 export const Paragraph = styled.p`
